@@ -1,0 +1,33 @@
+.cardTitle{
+    color: white;
+    font-size: 30px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    border: 1px solid #f9f9f96e;
+    gap: 10px;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    width: 23.5%;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.cardImage{
+    width: 100%;
+}
+.button{
+    height: 50px;
+    background-color: #626269;
+    border: none;
+    width: 20%;
+    border-radius: 10px;
+    &:hover{
+        background-color: #a3a3ae;
+        transition: all 0.3s ease;
+        cursor: pointer;
+}
+}
