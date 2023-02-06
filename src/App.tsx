@@ -1,15 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
 import Home from './Pages/Home/Home'
 import Characters from './Pages/Characters/Characters'
 import About from './Pages/About/About'
 import NotFound from './Pages/NotFound/NotFound'
 import NavBar from './Components/NavBar/NavBar'
-import { NavLink, Route, Routes} from 'react-router-dom';
+import { Route, Routes} from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import CharacterPage from './Pages/CharacterPage/CharacterPage'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const {id} = useParams();
 
   return (
     <div className='container'>
@@ -18,12 +18,10 @@ function App() {
       <Route path = "/" element = { <Home/> } />
       <Route path = "/about" element = { <About/> } />
       <Route path = "/characters" element = { <Characters/> } />
+      <Route path = "/characters/:id" element = { <CharacterPage/> }/>
       <Route path ="*" element = { <NotFound/> }></Route>
-      {/* <Route path = "/characters/:id" element = { <Character/> } /> */}
     </Routes>
     </div>
-    
-
   )
 }
 
