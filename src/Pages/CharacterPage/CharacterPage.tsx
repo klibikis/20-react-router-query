@@ -19,7 +19,7 @@ const CharacterPage = () => {
     }
 
     const character = useQuery({
-        queryKey: ["character"],
+        queryKey: ["character", id],
         queryFn: getCharacter,
     })
 
