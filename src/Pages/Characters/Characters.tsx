@@ -11,7 +11,6 @@ type Character = {
     image: string,
 }
 
-
 const Characters = () => {
 
     const getCharacters = () => {
@@ -47,8 +46,6 @@ const Characters = () => {
                 ))}
         </div>
     )
-
 }
-
 
 export default Characters

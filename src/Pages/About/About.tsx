@@ -2,7 +2,6 @@ import style from './About.module.scss'
 
 const About = () => {
 
-
     return(
         <div>
             <h1 className = { style.title }>About</h1>
@@ -11,9 +10,5 @@ const About = () => {
         </div>
     )
 }
-
-
-
-
 
 export default About

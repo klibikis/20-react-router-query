@@ -9,9 +9,7 @@ type CharacterCardProps = {
     onClick?: () => void
 }
 
-
 const CharacterCard = ({name, status, image, onClick, id}: CharacterCardProps) => {
-
 
     return(
         <Link 
@@ -25,6 +23,5 @@ const CharacterCard = ({name, status, image, onClick, id}: CharacterCardProps) =
         
     )
 }
-
 
 export default CharacterCard
